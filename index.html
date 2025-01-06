@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilan pre_anesthesique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bilant pre_anesthesique</h1>
+    </header>
+
+    <section class="identifient_patient">
+        <div class="formulaire">
+            <h2>identifient du patient</h2>
+            <label for="nom">nom:</label>
+            <input type="text" name="nom" id="nom" placeholder="nom complet" required>
+            <label for="age">age:</label>
+            <input type="number" name="age" id="age" placeholder="age" required>
+            <label for="domicile">domicile:</label>
+            <input type="text" name="domicile" id="domicile" placeholder="domicile" required>
+        
+        </div>
+    </section>
+
+    <section class="antecedent">
+        <div class="patient_antecedent">
+            <label for="antp"><b >antecedents personnel:</b></label>
+            <input type="text" name="antp" id="antp" placeholder=".............." require>
+            <label for="antm"><b >medicaux:</b></label>
+            <input type="text" name="antm" id="antm" placeholder=".............." require>
+            <label for="allergie">allergie:</label>
+            <input type="text" name="allergie" id="allergie" placeholder=".............." required>
+            <label for="asthme">asthme:</label>
+            <input type="text" name="asthme" id="asthme" placeholder="............." required>
+            <label for="HTC">HTC:</label>
+            <input type="text" name="HTC" id="HTC" placeholder="............" required>
+            <label for="Diabete">diabete:</label>
+            <input type="text" name="Diabete" id="Diabete" placeholder="............" required>
+            <label for="comitial">comitial:</label>
+            <input type="text" name="comitial" id="comitial" placeholder="............" required>
+            <label for="drepano">drepano:</label>
+            <input type="text" name="drepano" id="drepano" placeholder="............." required>
+
+            <label for="medi"><b >medicamenteux:</b></label>
+            <input type="text" name="medicamenteux" id="medicamenteux" placeholder=".............." require>
+            <label for="autre"><b >autres:</b></label>
+            <input type="text" name="autre" id="autre" placeholder=".............." require>
+
+        </div>
+    </section>
+
+    <section class="gyneco">
+        <h3>gyneco-obstetrico</h3>
+        <label for="g">g:</label>
+        <input type="text" name="g" id="g" placeholder=".............." required>
+        <label for="p">p:</label>
+        <input type="text" name="p" id="p" placeholder=".............." required>
+        <label for="csr">csr:</label>
+        <input type="text" name="csr" id="csr" placeholder=".............." required>
+        <label for="g">g:</label>
+        <input type="text" name="g" id="g" placeholder=".............." required>
+        <label for="grosess(sa)">grosess(sa):</label>
+        <input type="text" name="grosess(sa)" id="grosess(sa)" placeholder=".............." required>
+        <label for="DDR">DDR:</label>
+        <input type="text" name="DDR" id="DDR" placeholder=".............." required>
+        <label for="contraception">contraception:</label>
+        <input type="text" name="contraception" id="contraception" placeholder=".............." required>
+
+        <label for="contraception"><b >chirurgicaux:</b></label>
+        <input type="text" name="chirurgicaux" id="chirurgicaux" placeholder=".............." required>
+        <label for="contraception"><b >anesthesique:</b></label>
+        <input type="text" name="anesthesique" id="anesthesique" placeholder=".............." required>
+        <label for="contraception"><b >familliaux:</b></label>
+        <input type="text" name="familliaux" id="familliaux" placeholder=".............." required>
+
+        <label for="hta">hta</label>
+        <input type="text" name="hta" id="hta" placeholder=".............." require>
+        <label for="diabete">diabete</label>
+        <input type="text" name="diabete" id="diabete" placeholder=".............." require>
+        <label for="drepanos">drepanosytose</label>
+        <input type="text" name="drepanos" id="drepanos" placeholder=".............." require>
+        <label for="autrre">autres</label>
+        <input type="text" name="autrre" id="autrre" placeholder=".............." require>
+    </section>
+
+    <section class="habitude">
+        <input type="radio" id="tabac" name="habitude" value="tabac">
+        <label for="tabac">Tabac</label>
+        <input type="radio" id="alcool" name="habitude" value="alcool">
+        <label for="alcool">Alcool</label>
+        <input type="radio" id="cola" name="habitude" value="cola">
+        <label for="cola">Cola</label>
+    </section>
+    <button type="submit" class="sub_button">enregistrer le profil</button>
+</body>
+</html>

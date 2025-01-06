@@ -1,0 +1,166 @@
+/* Variables pour les couleurs */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f5f6fa;
+    --input-background: #ffffff;
+    --border-color: #dcdde1;
+    --text-color: #2d3436;
+    --success-color: #27ae60;
+}
+
+/* Style général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Sections */
+section {
+    background-color: var(--input-background);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Structure de base pour les formulaires */
+.formulaire, .patient_antecedent, .gyneco {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+/* Conteneur pour chaque paire label-input */
+.input-group {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Labels et inputs */
+label {
+    font-weight: 500;
+    color: var(--primary-color);
+    min-width: 150px;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+/* Section habitudes */
+.habitude {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.habitude label {
+    text-align: left;
+    min-width: auto;
+}
+
+.habitude input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+/* Bouton d'enregistrement */
+.sub_button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 300px;
+    margin: 2rem auto;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sub_button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .formulaire, .patient_antecedent, .gyneco {
+        grid-template-columns: 1fr;
+    }
+    
+    .input-group {
+        grid-template-columns: 120px 1fr;
+    }
+    
+    label {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+    
+    label {
+        text-align: left;
+        padding-right: 0;
+    }
+    
+    .habitude {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    section {
+        padding: 1rem;
+    }
+}
