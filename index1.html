@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>bilant pre_anesthesique</h1>
+    </header>
+
+    <section class="antecedent">
+        <h2>pre_operatoire:</h2>
+
+        <label for="inter">intervention:</label>
+        <input type="text" name="inter" id="inter" placeholder="............." required >
+        <label for="operateur">operateur:</label>
+        <input type="text" name="operateur" id="operateur" placeholder=".............." required >
+    </section>
+
+    <section class="antecedent">
+        <h3>examen clinique</h3>
+        <p>date:</p>
+        <input type="date" name="" id="date">
+        <input type="text" name="dr" id="dr" placeholder="par DR:..........." required>
+        <p>PA:</p>
+        <label for="brasd">bras D</label>
+        <input type="text" name="autrre" id="autrre" placeholder=".............." required>
+
+        <label for="bras">brad g</label>
+        <input type="text" name="bras" id="bras" placeholder=".............." required>
+        <p>FC:</p>
+        <label for="irgu">irreguliere</label>
+        <input type="text" name="irgu" id="irgu" placeholder=".............." required>
+
+        <label for="reguliere">reguliere</label>
+        <input type="text" name="reguliere" id="reguliere" placeholder=".............." required>
+
+    </section>
+
+    <section class="antecedent">
+        <p>EXAMEN GENERAL:</p>
+        <textarea id="commentaire" name="commentaire" rows="20" cols="100" placeholder="Votre commentaire..."></textarea>
+        <br>
+        <label for="dif">Difficulté d'intubation:</label>
+        <input type="text" name="dif" id="dif" placeholder="..........." required>
+        <label for="etat">Etat dentaire</label>
+        <input type="text" name="etat" id="etat" placeholder="..........." required>
+        <label for="dif">Etat veineux:</label>
+        <input type="text" name="dif" id="dif" placeholder="..........." required>
+        <label for="rach">Rachis:</label>
+        <input type="text" name="rach" id="rach" placeholder="..........." required>
+    </section>
+    <section class="antecedent">
+        <h2>billant para_clinique</h2>
+
+        <b>Groupe Sanguin</b>
+        <div class="groupe-options">
+            <input type="radio" id="A+" name="groupe_sanguin" value="A+">
+            <label for="A+">A+</label>
+
+            <input type="radio" id="A-" name="groupe_sanguin" value="A-">
+            <label for="A-">A-</label>
+
+            <input type="radio" id="B+" name="groupe_sanguin" value="B+">
+            <label for="B+">B+</label>
+
+            <input type="radio" id="B-" name="groupe_sanguin" value="B-">
+            <label for="B-">B-</label>
+
+            <input type="radio" id="AB+" name="groupe_sanguin" value="AB+">
+            <label for="AB+">AB+</label>
+
+            <input type="radio" id="AB-" name="groupe_sanguin" value="AB-">
+            <label for="AB-">AB-</label>
+
+            <input type="radio" id="O+" name="groupe_sanguin" value="O+">
+            <label for="O+">O+</label>
+
+            <input type="radio" id="O-" name="groupe_sanguin" value="O-">
+            <label for="O-">O-</label>
+        </div>
+
+        <label for="rh"><b>RH:</b></label>
+        <input type="text" name="rh" id="rh" placeholder=".............." required>
+    </section>
+
+    <a href="index1.html" class="sub_button">Enregistrer le profil</a>
+
+    </section>
+</body>
+</html>
